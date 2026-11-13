@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2236"/><stop offset="1" stop-color="#0f4a5c"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#46dccd"/><stop offset="1" stop-color="#127c8f"/>
+    </linearGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#bg)"/>
+  
+  <g transform="translate(35.2 53.2) scale(1.35625)">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4dc96"/>
+      <stop offset="0.5" stop-color="#c99a3b"/>
+      <stop offset="1" stop-color="#7d5a1a"/>
+    </linearGradient>
+    <radialGradient id="sea" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#46dccd"/>
+      <stop offset="0.6" stop-color="#127c8f"/>
+      <stop offset="1" stop-color="#0b3350"/>
+    </radialGradient>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="url(#brass)"/>
+  <circle cx="64" cy="64" r="44" fill="#6b4c14"/>
+  <circle cx="64" cy="64" r="40" fill="url(#sea)"/>
+  <g fill="#6b4c14" opacity="0.85">
+    <circle cx="112" cy="83.9" r="3.5"/><circle cx="112" cy="44.1" r="3.5"/>
+    <circle cx="16" cy="83.9" r="3.5"/><circle cx="16" cy="44.1" r="3.5"/>
+    <circle cx="83.9" cy="112" r="3.5"/><circle cx="44.1" cy="112" r="3.5"/>
+    <circle cx="83.9" cy="16" r="3.5"/><circle cx="44.1" cy="16" r="3.5"/>
+  </g>
+  <path d="M55 45v38l32-19z" fill="#ffffff" fill-opacity="0.96"/>
+  <path d="M30 56a36 36 0 0 1 28-24" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="4" stroke-linecap="round"/>
+</g>
+  <text x="230.8" y="134.4" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="40" fill="#ffffff">Porthole</text>
+  <text x="230.8" y="163.1" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="500" font-size="22" fill="#46dccd">for YouTube</text>
+  <text x="230.8" y="189.1" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="400" font-size="13" fill="#ffffff" fill-opacity="0.8">Pop your video out. Keep working.</text>
+</svg>
