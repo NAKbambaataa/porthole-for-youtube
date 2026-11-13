@@ -1,0 +1,22 @@
+{
+  "name": "porthole-for-youtube",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pop YouTube videos out into a floating, always-on-top window.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "assets": "node scripts/make-assets.mjs",
+    "package": "npm run typecheck && npm test && npm run build && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}

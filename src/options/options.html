@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porthole for YouTube: Settings</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img id="logo" alt="" width="48" height="48" />
+        <div>
+          <h1>Porthole <span>for YouTube</span></h1>
+          <p class="muted">Settings sync across your signed-in Chrome browsers. <span id="version"></span></p>
+        </div>
+      </header>
+
+      <section>
+        <h2>Pop-out</h2>
+        <label class="row">
+          <span><strong>Show button in the player</strong><small>Adds the Porthole button next to the fullscreen button.</small></span>
+          <input type="checkbox" id="showButton" />
+        </label>
+        <div class="row">
+          <span>
+            <strong>Keyboard shortcut</strong>
+            <small>Pops the video out or back in. Needs Alt, Ctrl or ⌘ so it never fires while typing.</small>
+          </span>
+          <span class="inline">
+            <button type="button" id="hotkey" class="key" aria-describedby="hotkey-hint"></button>
+            <button type="button" id="hotkey-reset" class="link">Reset</button>
+          </span>
+        </div>
+        <p id="hotkey-hint" class="hint" role="status"></p>
+        <label class="row">
+          <span><strong>Starting width</strong><small>The first time only. After that Chrome remembers the size and position you choose.</small></span>
+          <span class="inline"><input type="range" id="width" min="240" max="1280" step="20" /><output id="width-out"></output></span>
+        </label>
+        <label class="row">
+          <span>
+            <strong>Pop out automatically when I switch tabs</strong>
+            <small>Experimental. Uses Chrome's auto picture-in-picture, so Chrome may ask for permission the first time.</small>
+          </span>
+          <input type="checkbox" id="autoPopOnTabSwitch" />
+        </label>
+      </section>
+
+      <section>
+        <h2>Floating window</h2>
+        <label class="row">
+          <span><strong>Show captions</strong><small>Mirrors YouTube's captions into the window when they're turned on in the tab.</small></span>
+          <input type="checkbox" id="captions" />
+        </label>
+        <label class="row">
+          <span><strong>Auto-hide controls</strong><small>Fades the controls out while the video plays.</small></span>
+          <input type="checkbox" id="autoHideControls" />
+        </label>
+        <label class="row">
+          <span><strong>Skip length</strong><small>For ← / → and J / L in the floating window.</small></span>
+          <select id="seekStep">
+            <option value="5">5 seconds</option>
+            <option value="10">10 seconds</option>
+            <option value="15">15 seconds</option>
+            <option value="30">30 seconds</option>
+          </select>
+        </label>
+      </section>
+
+      <section>
+        <h2>Shortcuts in the floating window</h2>
+        <ul class="keys">
+          <li><kbd>Space</kbd> / <kbd>K</kbd> Play or pause</li>
+          <li><kbd>←</kbd> <kbd>→</kbd> / <kbd>J</kbd> <kbd>L</kbd> Skip back or forward</li>
+          <li><kbd>↑</kbd> <kbd>↓</kbd> Volume</li>
+          <li><kbd>M</kbd> Mute</li>
+          <li><kbd>&lt;</kbd> <kbd>&gt;</kbd> Playback speed</li>
+          <li><kbd>Shift</kbd>+<kbd>N</kbd> / <kbd>Shift</kbd>+<kbd>P</kbd> Next or previous video</li>
+        </ul>
+      </section>
+
+      <footer>
+        <button type="button" id="reset" class="link">Restore all defaults</button>
+        <span id="status" role="status" aria-live="polite"></span>
+      </footer>
+      <p class="muted legal">
+        Porthole is an independent project. It is not affiliated with, endorsed by, or sponsored by YouTube or Google.
+        It collects no data.
+      </p>
+    </main>
+    <script type="module" src="./options.ts"></script>
+  </body>
+</html>
